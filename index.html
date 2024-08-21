@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="icon" href="img/icono.jpg" type="image/jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="container_input">
+            <h1 class="titulo_principal">Encriptador de Texto</h1>
+            <textarea id="inputText" placeholder="Ingresa el texto aquí..."></textarea>
+            <p id="mensajeError" class="mensaje_error"></p>
+            <div class="container_botones_input">
+                <button class="boton_uno" onclick="encriptarTexto()">Encriptar</button>
+                <button class="boton_dos" onclick="desencriptarTexto()">Desencriptar</button>
+            </div>
+        </div>
+        <div class="container_output">
+            <textarea id="outputText" readonly placeholder="Resultado..."></textarea>
+            <div class="container_botones_output">
+                <button class="boton_copiar" onclick="copiarTexto()">Copiar</button>
+                <button class="boton_limpiar" onclick="limpiarTexto()">Limpiar</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">Realizado por Estefania Builes Quintero</footer>
+    <script src="app.js"></script>
+</body>
+</html>
